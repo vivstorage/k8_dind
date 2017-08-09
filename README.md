@@ -1,7 +1,7 @@
 # k8_dind
 
 Docker-in-docker daemon for Kubernetes deployer/handler  
-required python 2.7 with kubernetes module (pip install kubernetes==2), tested on windows
+required python 2.7 with kubernetes module (pip install kubernetes==2), tested on windows with minikube
 
 python k8_dind3.py --help  
 usage: k8_dind3.py [-h] [-c string] [-start] [-stop] -name NAME  
@@ -18,3 +18,5 @@ optional arguments:
 run example   
 python k8_dind3.py -name dind -start  
 
+docker:dind deploying by default, you can specify dind version by -docker option.  
+K8 config will try to find in system if path not specified
