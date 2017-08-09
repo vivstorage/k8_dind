@@ -13,7 +13,7 @@ optional arguments:
   -start          start daemon  
   -stop           stop daemon  
   -name NAME      dind container name, required parameter  
-  -docker DOCKER  docker container to pull  
+  -docker DOCKER  docker container to pull, syntax of container naming 'docker:<dind_contaner_name-version>'
   
 run example   
 python k8_dind3.py -name dind -start  
